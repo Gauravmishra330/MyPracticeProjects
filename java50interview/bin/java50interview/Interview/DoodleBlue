@@ -1,0 +1,42 @@
+hello world
+
+h -1
+e -1
+l -3
+o - 2
+
+alan, bob, alexa, max, json
+
+List<String> list =  Arrays.asList({"alan","bob","alexa","max"});
+
+  List<String> finalList = list.stream().filter(s -> s.startsWith("a")).collect(Collectors.toList());
+
+10, 30, 70, 20, 80, 40
+
+ List<Integer> list = Arrays.asList(10,30,70,20,80,40);
+
+  int fhigh = 0;
+  int shigh = 0;
+for( int i : list){
+   if(i > fhigh){
+     shigh = fhigh;
+     fhigh = i;
+   }else if(i > shigh && i != fhigh){
+      shigh = i;
+    }
+}
+System.out.println(shigh);
+
+select sal from emp order by sal desc limit 1 offset 1;
+
+@REstController
+@RequestMapping("/api/v1")
+class EmpController {
+  
+@PostMapping("/emp")
+publiv Emp createEmp(@REquestBody Emp emp){
+  
+}
+  
+
+}

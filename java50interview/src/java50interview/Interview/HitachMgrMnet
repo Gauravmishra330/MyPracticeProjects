@@ -1,0 +1,56 @@
+a1[] = {"india","china","bngaladesh","UK,","US","india","UK","US","india"};
+a1[] = {"pakistan,"UK","china","india","srilanka"};
+
+1. how many duplicte records in both arrys into another array ?
+2. print a map key is country and contry frequency how many times it repreated in botht the arrays 
+
+
+   class A{
+    public static  void  main(String args[]){
+
+     String a1[] = {"india","china","bngaladesh","UK,","US","india","UK","US","india"};
+	String a2[] = {"pakistan,"UK","china","india","srilanka"};
+
+       Set<String> dup = getDuplicates(a1,a2);  
+
+ // get country frequency as map 
+
+      Map<String,Long> map = getCountryCount();
+   }
+
+static Map<String,Long> getCountryCount(){
+
+     Map<String,Long> map =  new HashMap<>();
+    Arrays.stream(a1).map(String::toLowerCase)
+    .forEach(c -> map.merge(c,1L,Long::sum));
+
+ Arrays.stream(a2).map(String::toLowerCase)
+    .forEach(c -> map.merge(c,1L,Long::sum));
+
+    return map;
+ }
+
+static Set<String>getDuplicates(Stringa1[],String a2[]){
+    
+       Set<String> l1 = new HashSet(Arrays.asList(a1));
+	Set<String> l2 = new HashSet(Arrays.asList(a2));
+    Set<String> dup = set1.stream().filter(set2::contains).collect(Collectors.toSet());
+ 
+    return dup;   
+  }
+
+  }
+
+
+
+
+
+  interface B{
+}
+  interface A {
+  }
+
+
+  emp : 
+
+

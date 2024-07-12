@@ -1,0 +1,17 @@
+interface X{
+
+   int add(int a, int b);
+}
+
+
+ class Calculator{
+
+   p.s.v.m(){
+
+
+     X x1 =  (a,b) -> a+b;
+    
+     SOP(x1.add(10,20));// 30;
+
+ }
+}

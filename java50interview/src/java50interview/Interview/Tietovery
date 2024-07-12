@@ -1,0 +1,33 @@
+10,15,8,49,25,98,98,32,15
+
+find the max val from  list of integer
+
+List<Integer> list = {10,15,8,49,25,98,98,32,15};
+
+int mx = list.stream().mapToint(Integer::intValue).max().getAsInt();
+sop(mx);
+
+
+
+{1,2,4,5}
+{2,5,9,11}
+
+int[] a1= {1,2,4,5};
+int [] a2 = {2,5,9,11};
+// need to find subset array here
+
+int[] findSubSet(int a1[],int a2[]){
+    List<Integer> l1=Arrays.asList(a1);
+    List<Integer> l2=Arrays.asList(a2);
+    List<Integer> subset = new ArrayList<>();
+    for(int i: l1){
+      if(l2.contains(i)){
+         subset.add(i);
+      }
+    }
+} 
+
+
+using java 8:
+
+int [] r = Arrays.stream(a1).filter(x-> )

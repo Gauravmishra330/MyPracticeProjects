@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean class="Spring.SpringCore.bean.Engine" id="engine">
+    <property name="engno" value="7708"></property>
+     <property name="engnam" value="suzuki"></property>
+    </bean>
+    <bean class="Spring.SpringCore.bean.Car" id="car" autowire="byName">
+     <property name="carno" value="150"></property>
+    <property name="carnam" value="zen"></property>
+    </bean>
+    
+</beans>

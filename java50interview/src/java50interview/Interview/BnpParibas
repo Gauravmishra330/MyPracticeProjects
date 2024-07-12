@@ -1,0 +1,87 @@
+public static void main(String args[])
+    {
+        // HashMap with Country as key and Player as value
+        HashMap<String,String> map=new HashMap<String,String>();
+        map.put("India","Sachin");
+        map.put("Australia","Ricky Ponting");
+
+        // Iterating java iterator
+        System.out.println("Iterating java Iterator");
+        Iterator<String> countryKeySetIterator=map.keySet().iterator();
+        while(countryKeySetIterator.hasNext()){
+            String countryKey=countryKeySetIterator.next();
+            map.put("West Indies", "Brian Lara");
+            System.out.println(countryKey);
+ 
+        }
+        System.out.println("-----------------------------");
+    }
+
+has context menu
+
+obj = car 
+name,carno,millage
+
+remove duplictes bsed car number 
+
+List<car> list = new ArrayList<>();
+
+list.stream().collect(Colectors.toCollection() -> new TreeSet<>(Comparator.comparing(car :: getcarNo))).stream().collect(Collectors.toList());
+
+
+
+
+List<int> list = {1 to 500}
+
+1,11,15,21 = 11 duplicate =1+1 = < 5 so we need to take this values else e will ignore that value
+
+500 =5+0+0 = 5
+
+public boolean isHavingDuplicate(int num){
+    int i[] = new int[5];
+   while(num >0){
+     int digit = num %10;
+    cont[digit]++;
+	if(count[digit] > 1){
+          return true;
+        }
+
+  	num = num/10;
+     
+   }
+return false;
+}
+
+
+public static void main(String args[]){
+  
+List<int> list={1,.....500};
+
+for(int num : list){
+   if(isHavingDuplicate(num)){
+      // check sum now 
+      int sum  = getSum(num);
+      if(sum <= 5){
+        SOP(num); 
+      }
+   }
+ }
+
+}
+
+public int getSum(int num){
+    int sum =0;
+   while(num >0){
+     sum =sum+( num %10);
+    	num = num/10;
+     
+   }
+return sum;
+}
+
+
+
+
+
+
+

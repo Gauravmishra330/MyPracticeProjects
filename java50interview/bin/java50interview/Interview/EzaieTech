@@ -1,0 +1,34 @@
+class Author{
+
+  private int id;
+  private String name;
+ 
+  @OneToMany( mappedBy = "author", cascade = All)
+  @
+  private List<Book> books;
+}
+
+class Book{
+
+private int id;
+private String title;
+
+@ManyToOne
+@JoinColumn(name  = "auther_id")
+private Author author;
+
+
+}
+
+class Controller{
+
+  @PostMapping(/authors)
+public Author createAuthor(@RequestBody AuthorDTO author){
+
+  
+}
+}
+class Service{
+
+  
+}

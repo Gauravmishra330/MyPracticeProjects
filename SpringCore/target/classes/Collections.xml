@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="Spring.SpringCore.bean.Employee" id="employee">
+    <property name="names">
+    	<list>
+    		<value>sam</value>
+    		<value>arif</value>
+    		<value>dan</value>
+    	</list>
+    </property>
+    <property name="ids">
+    <set>
+    <value>1</value>
+    <value>2</value>
+    <value>3</value>
+    </set>
+    </property>
+    <property name="dept">
+    <map>
+    <entry key="11" value="hr" /> 
+     <entry key="22" value="dev" /> 
+      <entry key="33" value="ceo" /> 
+    </map>
+    </property>
+    </bean>
+</beans>
