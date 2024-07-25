@@ -1,0 +1,5 @@
+class student
+{
+System.out.println("Good morning");
+}
+}
